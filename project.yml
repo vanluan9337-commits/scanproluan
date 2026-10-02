@@ -7,9 +7,12 @@ targets:
   ScanPro:
     type: application
     platform: iOS
-    sources: [Sources]
+    sources:
+      - path: .
+        includes:
+          - "**/*.swift"
     info:
-      path: Sources/Info.plist
+      path: Info.plist
       properties:
         CFBundleDisplayName: ScanPro
         NSCameraUsageDescription: Ứng dụng cần camera để quét tài liệu.
